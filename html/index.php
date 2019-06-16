@@ -11,150 +11,150 @@ $calendar
     ->addEvent('2017-12-25', '2017-12-25', 'Christmas', true);
 
 #   or
-#   $events = array(array('2017-01-14', '2017-01-14', 'My Birthday', true), array('2017-12-25', '2017-12-25', 'Christmas', true));
-#   $calendar->addEvents($events);
+$events = [['2017-01-14', '2017-01-14', 'My Birthday', true], ['2017-12-25', '2017-12-25', 'Christmas', true]];
+$calendar->addEvents($events);
 
 ?>
 <!doctype html>
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <title>PHP Calendar By benhall14</title>
+    <title>PHP Calendar By benhall14</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
 
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
-        <link rel="stylesheet" type="text/css" href="css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
 
-    </head>
+</head>
 
-    <body>
-        
-        <h1>PHP Calendar <span>By benhall14</span></h1>
-        
-        <div class="container">
+<body>
 
-            <div class="summary">
-            
-                <p>A simple PHP class to generate calendars with 8 different color schemes to choose from (or use your own style sheet).</p>
-            
-                <p>You can add events using the optional API.</p>
-            
-            </div>
-    
-            <div class="row fix">
+<h1>PHP Calendar <span>By benhall14</span></h1>
 
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-1-1'), ''); ?>
+<div class="container">
 
-                    <hr />    
+    <div class="summary">
 
-                </div>
+        <p>A simple PHP class to generate calendars with 8 different color schemes to choose from (or use your own style sheet).</p>
 
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-2-1'), 'pink'); ?>
+        <p>You can add events using the optional API.</p>
 
-                    <hr />    
+    </div>
 
-                </div>
+    <div class="row fix">
 
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-3-1'), 'blue'); ?>
+        <div class="col-xs-12 col-sm-6 col-md-4">
 
-                    <hr />    
+            <?php echo $calendar->draw(date('Y-1-1'), ''); ?>
 
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-4-1'), 'orange'); ?>
-
-                    <hr />    
-
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-5-1'), 'purple'); ?>
-
-                    <hr />    
-
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-6-1'), 'yellow'); ?>
-
-                    <hr />    
-
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-7-1'), 'green'); ?>
-
-                    <hr />    
-
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-8-1'), 'grey'); ?>
-
-                    <hr />    
-
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-9-1'), 'pink'); ?>
-
-                    <hr />    
-
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-10-1'), 'blue'); ?>
-                
-                </div>
-                
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                
-                    <?php echo $calendar->draw(date('Y-11-1'), 'orange'); ?>
-                
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    
-                    <?php echo $calendar->draw(date('Y-12-1'), 'purple'); ?>
-
-                </div>
-
-            </div>
-
-            <div class="copyright">
-                
-                <p>&copy; Copyright Benjamin Hall :: <a href="https://github.com/benhall14/php-calendar">https://github.com/benhall14/php-calendar</a></p>
-            
-            </div>
+            <hr/>
 
         </div>
 
-    </body>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-2-1'), 'pink'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-3-1'), 'blue'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-4-1'), 'orange'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-5-1'), 'purple'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-6-1'), 'yellow'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-7-1'), 'green'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-8-1'), 'grey'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-9-1'), 'pink'); ?>
+
+            <hr/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-10-1'), 'blue'); ?>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-11-1'), 'orange'); ?>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+
+            <?php echo $calendar->draw(date('Y-12-1'), 'purple'); ?>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>&copy; Copyright Benjamin Hall :: <a href="https://github.com/benhall14/php-calendar">https://github.com/benhall14/php-calendar</a></p>
+
+    </div>
+
+</div>
+
+</body>
 
 </html>
