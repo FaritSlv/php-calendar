@@ -1,6 +1,6 @@
 <?php
 
-require('../src/php-calendar/Calendar.php');
+require('../src/phpCalendar/Calendar.php');
 
 use benhall14\phpCalendar\Calendar;
 
